@@ -1,0 +1,10 @@
+#page-description {
+    border: 1px solid #000000;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    left: 10px;
+    top: -330px;
+    z-index: 100;
+    padding: 10px;
+}
