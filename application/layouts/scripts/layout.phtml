@@ -33,9 +33,9 @@ echo $this->doctype(); ?>
     <link href="<?php echo $this->baseUrl(); ?>/styles/galleryview/jquery.galleryview-3.0-dev.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <h1 class="text-center"><?php echo $this->escape($this->title); ?></h1>
     <div id="content" class="container">
-        <h1><?php echo $this->escape($this->title); ?></h1>
-            <?php echo $this->layout()->content; ?>
+        <?php echo $this->layout()->content; ?>
     </div>
 <?php echo $this->headScript(); ?>
 <?php echo $this->headLink(); ?>
