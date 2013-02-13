@@ -4,18 +4,8 @@ body,html {
     background-color: #EEEEEE;
 }
 
-div {
-    display: block;
-}
-
 .border-radius {
     -moz-border-radius: 10px; /* Firefox */
     -webkit-border-radius: 10px; /* Safari, Chrome */
     border-radius: 10px; /* CSS3 */
-}
-
-#content {
-    width: 980px;
-    margin: auto;
-    font-family: Courgette;
 }

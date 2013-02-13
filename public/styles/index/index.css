@@ -1,3 +1,16 @@
+#content {
+    padding: 50px;
+}
+
+.btn-mini {
+    width: 50px;
+}
+
+img.angry_cat_pic {
+    height: 100px;
+    width: 100px;
+}
+
 #page-description {
     border: 1px solid #000000;
     width: 400px;
