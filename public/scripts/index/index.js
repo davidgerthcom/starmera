@@ -105,7 +105,7 @@ AngryCatView = Backbone.Marionette.ItemView.extend({
   events: {
     'click .rank_up button': 'rankUp',
     'click .rank_down button': 'rankDown',
-    'click a.disqualify': 'disqualify'
+    'click button.disqualify': 'disqualify'
   },
 
   initialize: function(){
