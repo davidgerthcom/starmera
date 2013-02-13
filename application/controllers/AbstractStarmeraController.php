@@ -1,6 +1,8 @@
 <?php
-class IndexController extends Zend_Controller_Action
+
+abstract class AbstractStarmeraController extends Zend_Controller_Action
 {
+
     public function init()
     {
         $this->view->headScript()->appendFile('/scripts/jquery/jquery-1.9.1.min.js');
@@ -11,10 +13,6 @@ class IndexController extends Zend_Controller_Action
         $this->view->headScript()->appendFile('/scripts/backbone.marionette/backbone-babysitter.js');
         $this->view->headScript()->appendFile('/scripts/backbone.marionette/backbone-wreqr.js');
         $this->view->headScript()->appendFile('/scripts/backbone.marionette/backbone-marionette.js');
-    }
-
-    public function indexAction()
-    {
     }
 }
 
