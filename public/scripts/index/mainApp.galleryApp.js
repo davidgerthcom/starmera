@@ -8,7 +8,10 @@ MainApp.GalleryApp = function() {
         }
     });
 
-    GalleryCategory = Backbone.Model.extend({});
+    GalleryCategory = Backbone.RelationalModel.extend({
+        urlRoot: 'http://davidgerth.com/rest/',
+        idAttribute: 'handle'
+    });
 
     GalleryCategories = Backbone.Collection.extend({
         model: GalleryCategory
@@ -30,6 +33,12 @@ MainApp.GalleryApp = function() {
         GalleryApp.initializeLayout();
 
         GalleryApp.GalleryCategories.add(new GalleryCategory({imagePath: 'images/cats/cat2.jpg'}));
+
+        var category = new GalleryCategory({
+            "handle": 1
+        });
+        category.fetch();
+        console.log(category);
     };
 
     return GalleryApp;
