@@ -1,0 +1,1 @@
+{"imagePath": "images/cats/cat1.jpg"}

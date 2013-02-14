@@ -36,8 +36,11 @@ MainApp.GalleryApp = function() {
         var category = new GalleryCategory({
             "handle": 1
         });
-        category.fetch();
-        console.log(category);
+        category.fetch({
+            success: function(category) {
+                GalleryApp.GalleryCategories.add(category);
+            }
+        });
     };
 
     return GalleryApp;
