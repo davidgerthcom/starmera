@@ -9,8 +9,7 @@ MainApp.GalleryApp = function() {
     });
 
     GalleryCategory = Backbone.RelationalModel.extend({
-        urlRoot: 'http://davidgerth.com/rest/',
-        idAttribute: 'handle'
+        urlRoot: 'get.php'
     });
 
     GalleryCategories = Backbone.Collection.extend({
