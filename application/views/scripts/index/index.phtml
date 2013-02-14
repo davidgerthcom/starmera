@@ -1,9 +1,16 @@
 <?php
 $this->title = "Test";
 $this->headTitle($this->title);
-$this->headScript()->appendFile('scripts/index/index.js');
+$this->headScript()->appendFile('scripts/index/mainApp.js');
+$this->headScript()->appendFile('scripts/index/mainApp.galleryApp.js');
+$this->headScript()->appendFile('scripts/index/mainApp.galleryApp.categoryList.js');
+$this->headScript()->appendFile('scripts/index/mainApp.routing.js');
 $this->headLink()->appendStylesheet('styles/index/index.css');
 ?>
+
+<script type="text/template" id="gallery-layout">
+    <div id="gallery-content"></div>
+</script>
 
 <script type="text/template" id="gallery-categories">
 </script>
