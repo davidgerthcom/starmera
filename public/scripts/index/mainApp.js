@@ -5,7 +5,7 @@ MainApp.addRegions({
 });
 
 MainApp.vent.on("routing:started", function(){
-    if( ! Backbone.History.started) Backbone.history.start();
+    if (!Backbone.History.started) Backbone.history.start();
 });
 
 $(document).ready(function(){

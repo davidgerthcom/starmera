@@ -3,7 +3,10 @@ MainApp.Routing = function(){
 
     Routing.Router = Backbone.Marionette.AppRouter.extend({
         appRoutes: {
-        "": "index"
+            "": "index",
+            "gallery": "showGalleryIndex",
+            "gallery/:id": "showGallery",
+            "contact": "showContact"
         }
     });
 

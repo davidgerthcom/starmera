@@ -4,24 +4,14 @@ MainApp.GalleryApp.CategoryList = function() {
     var CategoryView = Backbone.Marionette.ItemView.extend({
         template: "#gallery-category",
         tagName: "li",
-        className: "span2"
+        className: "span4"
     });
 
     var CategoryListView = Backbone.Marionette.CompositeView.extend({
         tagName: "ul",
         className: "thumbnails",
         template: "#gallery-categories",
-        itemView: CategoryView,
-
-        events: {
-            'click img': 'imageClick'
-        },
-
-        imageClick: function(){
-            this.collection.add(new GalleryCategory({
-                imagePath: 'images/cats/cat4.jpg'
-            }));
-        }
+        itemView: CategoryView
     });
 
     CategoryList.showCategories = function(categories){
@@ -31,7 +21,3 @@ MainApp.GalleryApp.CategoryList = function() {
 
     return CategoryList;
 }();
-
-MainApp.vent.on("layout:rendered", function(){
-    MainApp.GalleryApp.CategoryList.showCategories(MainApp.GalleryApp.GalleryCategories);
-});
